@@ -39,8 +39,9 @@ header .nav-btn{
     opacity: 0;
 }
 @media only screen and (max-width: 700px){
-    header.nav-btn{
+    header .nav-btn{
         visibility: visible;
+
         opacity: 1;
         
     }
@@ -53,5 +54,13 @@ header .nav-btn{
         display: flex;
         align-items: center;
         justify-content: center;
+        gap: 5px;
+        background-color: var(--mainColor);
+        transition: 1s ease-in;
+        transform: translate(100vh);
     }
+    header .responsive_nav{
+        transform: none;
+    }
+
 }
