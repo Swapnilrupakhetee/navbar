@@ -37,8 +37,10 @@ header .nav-btn{
     color: var(--textColor);
     visibility: hidden;
     opacity: 0;
+    font-size: 1.8rem;
 }
 @media only screen and (max-width: 700px){
+    
     header .nav-btn{
         visibility: visible;
 
@@ -47,6 +49,7 @@ header .nav-btn{
     }
     header nav{
         position: fixed;
+        flex-direction: column;
         top: 0;
         left: 0;
         height: 20%;
@@ -56,14 +59,24 @@ header .nav-btn{
         justify-content: center;
         gap: 5px;
         background-color: var(--mainColor);
-        transition: 1s ease-in opacity 0;
-        transform: translate(100vh);
+        transition: 0.5s ease-out ;
+        transform: translate(-1vh,-100vh);
     }
     header .responsive_nav{
         transform: none;
-        flex-direction: column;
+        
         
     }
+    nav .nav-close-btn{
+        position: absolute;
+        top :2rem;
+        right: 2rem;
+        
+    }
+    nav a{
+        font-size: 1rem;
+    }
 
+    
 
 }
